@@ -20,9 +20,6 @@ There are a few ways you can use this repo to deploy a server that can be use to
    2. Build the Docker image: `docker build -t mixpanel-proxy`
    3. Run a container using the image: `docker run --name mxpl -d -p 8080:80 mixpanel-nginx`
    4. Visit `http://localhost:8080`
-   
-   You should see: 
-   ![image](https://user-images.githubusercontent.com/556882/107558458-6ba75580-6ba0-11eb-89de-749b895b7399.png)
 
 ### Option 3: Add locations to your existing Nginx config
    If you already have servers running nginx, you can copy and paste the locations from the [nginx.conf](https://github.com/mixpanel/tracking-proxy/blob/master/nginx.conf) file in this repo and adjust the locations to match your preference.
