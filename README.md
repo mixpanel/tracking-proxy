@@ -25,8 +25,6 @@ There are a few ways you can use this repo to deploy a server that can be use to
    If you already have servers running nginx, you can copy and paste the locations from the [nginx.conf](https://github.com/mixpanel/tracking-proxy/blob/master/nginx.conf) file in this repo and adjust the locations to match your preference.
 
 
-***
-
 
 ## Using the proxy server with the Mixpanel JS library
    
