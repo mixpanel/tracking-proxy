@@ -2,8 +2,12 @@
 An Nginx config to proxy Mixpanel's Ingestion API. This can be used to set up your own servers to load the JS library and proxy tracking requests to Mixpanel.
 
 Related content:
+- [Mixpanel Data Collection Proxying](https://developer.mixpanel.com/docs/data-collection-proxying)
 - [Mixpanel Ingestion API Documentation](https://developer.mixpanel.com/reference/ingestion-api)
-- [Mixpanel JavaScript Documentation](https://developer.mixpanel.com/docs/javascript)
+- [Mixpanel JavaScript SDK Documentation](https://developer.mixpanel.com/docs/javascript)
+- [Mixpanel iOS SDK Documentation](https://developer.mixpanel.com/docs/ios)
+- [Mixpanel Swift SDK Documentation](https://developer.mixpanel.com/docs/swift)
+- [Mixpanel Android SDK Documentation](https://developer.mixpanel.com/docs/android)
 
 ## Installation
 
@@ -97,6 +101,22 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
 </html>
 ```
 
+### Using the proxy server with the iOS SDK
+
+Immediately after you initialize the Mixpanel instance, set the proxy url: 
+```objectivec
+self.mixpanel = [Mixpanel sharedInstanceWithToken:@"YOUR_PROJECT_TOKEN" launchOptions:launchOptions];
+self.mixpanel.serverURL = YOUR_PROXY_DOMAIN; // e.g. @"https://proxy-eoca2pin3q-uc.a.run.app"
+```
+
+### Using the proxy server with the Swift SDK
+
+Immediately after you initialize the Mixpanel instance, set the proxy url: 
+```swift
+mixpanel = Mixpanel.initialize(token: "YOUR_PROJECT_TOKEN")
+mixpanel.serverURL = YOUR_PROXY_DOMAIN // e.g. "https://proxy-eoca2pin3q-uc.a.run.app"
+```
+
 ### Using the proxy server with the Android SDK
 
 Add the following `meta-data` entries to your AndroidManifest.xml inside the <application> tag and replace `<YOUR_PROXY_DOMAIN>` with your actual proxy domain.
@@ -116,21 +136,4 @@ Add the following `meta-data` entries to your AndroidManifest.xml inside the <ap
     ...
 </application>
 ...
-```
-
-### Using the proxy server with the iOS SDK
-
-Immediately after you initialize the Mixpanel instance, set the proxy url: 
-```objectivec
-self.mixpanel = [Mixpanel sharedInstanceWithToken:@"YOUR_PROJECT_TOKEN" launchOptions:launchOptions];
-self.mixpanel.serverURL = YOUR_PROXY_DOMAIN; // e.g. @"https://proxy-eoca2pin3q-uc.a.run.app"
-```
-
-
-### Using the proxy server with the Swift SDK
-
-Immediately after you initialize the Mixpanel instance, set the proxy url: 
-```swift
-mixpanel = Mixpanel.initialize(token: "YOUR_PROJECT_TOKEN")
-mixpanel.serverURL = YOUR_PROXY_DOMAIN // e.g. "https://proxy-eoca2pin3q-uc.a.run.app"
 ```
