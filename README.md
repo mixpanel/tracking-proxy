@@ -1,12 +1,15 @@
 # Mixpanel Tracking Proxy Server
 An Nginx config to proxy Mixpanel's Ingestion API. This can be used to setup your own servers to load the JS library and proxy tracking requests to Mixpanel.
-For more documentation on the Mixpanel JS library visit https://developer.mixpanel.com/docs/javascript.
+
+Related content:
+- [Mixpanel Ingestion API Documentation](https://developer.mixpanel.com/reference/ingestion-api)
+- [Mixpanel Javascript Documentation](https://developer.mixpanel.com/docs/javascript)
 
 ## Instructions
 
 #### 1. Deploy the proxy server
 
-   This is just a simple Nginx config and Dockerfile so you can deploy this anywhere you want: your own hardware or the cloud provider of your choice. We've provided a couple of one-click deploys for your convenience.
+   This is just a simple Nginx config and Dockerfile so you can deploy this anywhere you want: your own hardware or the cloud provider of your choice. We've provided a couple of one-click deploys for your convenience:
    - [Run on Google Cloud](https://deploy.cloud.run)
    - [Deploy to DigitalOcean](https://cloud.digitalocean.com/apps/new?repo=https://github.com/jbwyme/mixpanel-proxy-test/tree/main)
    
