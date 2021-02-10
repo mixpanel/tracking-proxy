@@ -28,7 +28,7 @@ There are a few ways you can use this repo to deploy a server that can be use to
 
 ## Using the proxy with...
 
-### JavaScript
+### JavaScript SDK
    
 #### 1. Load the Mixpanel JS library from the proxy domain
 
