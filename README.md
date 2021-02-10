@@ -117,6 +117,9 @@ Add the following `meta-data` entries to your AndroidManifest.xml inside the <ap
 ```
 
 
-### Using the proxy server with the iOS / Swift SDK
+### Using the proxy server with the iOS SDK
 
-TODO
+Immediately after you initialize the Mixpanel instance, set the proxy url: 
+```objectivec
+self.mixpanel.serverURL = YOUR_PROXY_DOMAIN; // e.g. "https://proxy-eoca2pin3q-uc.a.run.app"
+```
