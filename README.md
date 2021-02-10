@@ -26,9 +26,9 @@ There are a few ways you can use this repo to deploy a server that can be use to
 
 
 
-## Using the proxy with...
+## How to use the proxy with the Mixpanel SDKs
 
-### JavaScript SDK
+### Using a proxy server with the JavaScript SDK
    
 #### 1. Load the Mixpanel JS library from the proxy domain
 
@@ -95,7 +95,7 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
 </html>
 ```
 
-### Android SDK
+### Using a proxy server with the Android SDK
 
 Add the following `meta-data` entries to your AndroidManifest.xml inside the <application> tag and replace `<YOUR_PROXY_DOMAIN>` with your actual proxy domain.
    
@@ -117,6 +117,6 @@ Add the following `meta-data` entries to your AndroidManifest.xml inside the <ap
 ```
 
 
-### iOS / Swift
+### Using a proxy server with the iOS / Swift SDK
 
 TODO
