@@ -25,8 +25,10 @@ There are a few ways you can use this repo to deploy a server that can be use to
    ![image](https://user-images.githubusercontent.com/556882/107558458-6ba75580-6ba0-11eb-89de-749b895b7399.png)
 
 ### Option 3: Add locations to your existing Nginx config
-    If you're application servers are already running nginx, you can copy and paste the locations from the [nginx.conf](https://github.com/mixpanel/tracking-proxy/blob/master/nginx.conf) file in this repo.
+   If you already have servers running nginx, you can copy and paste the locations from the [nginx.conf](https://github.com/mixpanel/tracking-proxy/blob/master/nginx.conf) file in this repo and adjust the locations to match your preference.
 
+
+***
 
 
 ## Using the proxy server with the Mixpanel JS library
