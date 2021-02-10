@@ -97,7 +97,7 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
 
 ### Android SDK
 
-Add the following `meta-data` entries to your AndroidManifest.xml inside the <application> tag:
+Add the following `meta-data` entries to your AndroidManifest.xml inside the <application> tag and replace `<YOUR_PROXY_DOMAIN>` with your actual proxy domain.
    
 ```java
 ...
