@@ -1,0 +1,7 @@
+{
+    "name": "proxy",
+    "options": {
+        "allow-unauthenticated": true,
+        "port": 80
+    }
+}
