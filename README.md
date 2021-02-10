@@ -5,15 +5,32 @@ Related content:
 - [Mixpanel Ingestion API Documentation](https://developer.mixpanel.com/reference/ingestion-api)
 - [Mixpanel JavaScript Documentation](https://developer.mixpanel.com/docs/javascript)
 
-## Instructions
+## Installation
 
-#### 1. Deploy the proxy server
+There are a few ways you can use this repo to deploy a server that can be use to proxy Mixpanel API requests: one-click deploy to cloud, build a docker image, or copy and paste the nginx settings to your own nginx config file.
 
-   This is just a simple Nginx config and Dockerfile so you can deploy this anywhere you want: your own hardware or the cloud provider of your choice. We've provided a couple of one-click deploys for your convenience:
+#### Option 1: One-click Deploy
    - [Run on Google Cloud](https://deploy.cloud.run)
    - [Deploy to DigitalOcean](https://cloud.digitalocean.com/apps/new?repo=https://github.com/jbwyme/mixpanel-proxy-test/tree/main)
    
-#### 2. Load the Mixpanel JS library from the proxy domain
+#### Option 2: Docker Image
+   Assuming you have Docker installed on your system, you can do the following:
+   
+   1. Clone the repo
+   2. Build the Docker image: `docker build -t mixpanel-proxy`
+   3. Run a container using the image: `docker run --name mxpl -d -p 8080:80 mixpanel-nginx`
+   4. Visit `http://localhost:8080`
+   
+   You should see: 
+   ![image](https://user-images.githubusercontent.com/556882/107558458-6ba75580-6ba0-11eb-89de-749b895b7399.png)
+
+#### Option 3: Add locations to your existing Nginx config
+    If you're application servers are already running nginx, you can copy and paste the locations from the [nginx.conf](https://github.com/mixpanel/tracking-proxy/blob/master/nginx.conf) file in this repo.
+
+
+## Using the proxy server with the Mixpanel JS library
+   
+#### 1. Load the Mixpanel JS library from the proxy domain
 
    _Note: This is only required if you are NOT bundling the Mixpanel JS library into your source code (via our npm module or otherwise)._
    
@@ -29,7 +46,7 @@ for(h=0;h<i.length;h++)g(a,i[h]);var j="set set_once union unset remove delete".
 MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";g=f.getElementsByTagName("script")[0];g.parentNode.insertBefore(e,g)}})(document,window.mixpanel||[]);
    ```
    
-#### 3. Configure the Mixpanel JS client to make requests to your proxy domain
+#### 2. Configure the Mixpanel JS client to make requests to your proxy domain
    
    Take the domain that exposes your proxy server and specify it as the value of the `api_host` config option when you initialize the Mixpanel JS SDK.
 
