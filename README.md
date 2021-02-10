@@ -26,9 +26,11 @@ There are a few ways you can use this repo to deploy a server that can be use to
 
 
 
-## Using the proxy server with the Mixpanel JS library
+## Using the proxy with...
+
+### JavaScript
    
-### 1. Load the Mixpanel JS library from the proxy domain
+#### 1. Load the Mixpanel JS library from the proxy domain
 
    _Note: This is only required if you are NOT bundling the Mixpanel JS library into your source code (via our npm module or otherwise)._
    
@@ -44,7 +46,7 @@ for(h=0;h<i.length;h++)g(a,i[h]);var j="set set_once union unset remove delete".
 MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";g=f.getElementsByTagName("script")[0];g.parentNode.insertBefore(e,g)}})(document,window.mixpanel||[]);
    ```
    
-### 2. Configure the Mixpanel JS client to make requests to your proxy domain
+#### 2. Configure the Mixpanel JS client to make requests to your proxy domain
    
    Take the domain that exposes your proxy server and specify it as the value of the `api_host` config option when you initialize the Mixpanel JS SDK.
 
@@ -52,7 +54,7 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
    mixpanel.init("<YOUR_PROJECT_TOKEN>", {api_host: "https://<YOUR_PROXY_DOMAIN>"})
    ```
    
-## Full Example
+#### Full Example
 ```index.html
 <html>
     <head>
@@ -92,3 +94,12 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
     </body>
 </html>
 ```
+
+### Android
+
+TODO
+
+
+### iOS / Swift
+
+TODO
