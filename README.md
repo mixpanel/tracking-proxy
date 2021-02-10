@@ -1,9 +1,9 @@
 # Mixpanel Tracking Proxy Server
-An Nginx config to proxy Mixpanel's Ingestion API. This can be used to setup your own servers to load the JS library and proxy tracking requests to Mixpanel.
+An Nginx config to proxy Mixpanel's Ingestion API. This can be used to set up your own servers to load the JS library and proxy tracking requests to Mixpanel.
 
 Related content:
 - [Mixpanel Ingestion API Documentation](https://developer.mixpanel.com/reference/ingestion-api)
-- [Mixpanel Javascript Documentation](https://developer.mixpanel.com/docs/javascript)
+- [Mixpanel JavaScript Documentation](https://developer.mixpanel.com/docs/javascript)
 
 ## Instructions
 
@@ -46,8 +46,8 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
             /**
              * Configuration Variables - CHANGE THESE!
              */
-            const MIXPANEL_PROJECT_TOKEN = YOUR_MIXPANEL_PROJECT_TOKEN // e.g. "67e8bfdec29d84ab2d36ae18c57b8535"
-            const MIXPANEL_PROXY_DOMAIN = YOUR_PROXY_DOMAIN // e.g. "https://proxy-eoca2pin3q-uc.a.run.app"
+            const MIXPANEL_PROJECT_TOKEN = YOUR_MIXPANEL_PROJECT_TOKEN; // e.g. "67e8bfdec29d84ab2d36ae18c57b8535"
+            const MIXPANEL_PROXY_DOMAIN = YOUR_PROXY_DOMAIN; // e.g. "https://proxy-eoca2pin3q-uc.a.run.app"
             
             /**
              * Set the MIXPANEL_CUSTOM_LIB_URL - No need to change this
