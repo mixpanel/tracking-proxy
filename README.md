@@ -95,9 +95,26 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
 </html>
 ```
 
-### Android
+### Android SDK
 
-TODO
+Add the following `meta-data` entries to your AndroidManifest.xml inside the <application> tag:
+   
+```java
+...
+<application>
+    <meta-data
+      android:name="com.mixpanel.android.MPConfig.EventsEndpoint"
+      android:value="<YOUR_PROXY_DOMAIN>/track" />
+    <meta-data
+      android:name="com.mixpanel.android.MPConfig.PeopleEndpoint"
+      android:value="<YOUR_PROXY_DOMAIN>/engage" />
+    <meta-data
+      android:name="com.mixpanel.android.MPConfig.GroupsEndpoint"
+      android:value="<YOUR_PROXY_DOMAIN>/groups" />
+    ...
+</application>
+...
+```
 
 
 ### iOS / Swift
