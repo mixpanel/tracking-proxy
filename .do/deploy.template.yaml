@@ -4,6 +4,6 @@ spec:
  - name: mixpanel-api-proxy
    git:
      branch: main
-     repo_clone_url: https://github.com/jbwyme/mixpanel-proxy-test.git
+     repo_clone_url: https://github.com/mixpanel/tracking-proxy.git
    dockerfile_path: ./Dockerfile
    http_port: 80
