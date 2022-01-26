@@ -8,6 +8,7 @@ There are a few ways you can use this repo to deploy a server that can be use to
 ### Option 1: One-click Deploy
    - [Run on Google Cloud](https://deploy.cloud.run)
    - [Deploy to DigitalOcean](https://cloud.digitalocean.com/apps/new?repo=https://github.com/mixpanel/tracking-proxy/tree/master)
+   - [Deploy on Railway](https://railway.app/new/template?template=https://github.com/mixpanel/tracking-proxy&envs=PORT&PORTDefault=80)
    
 ### Option 2: Docker Image
    Assuming you have Docker installed on your system, you can do the following:
