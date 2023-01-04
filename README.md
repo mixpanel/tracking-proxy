@@ -21,3 +21,4 @@ There are a few ways you can use this repo to deploy a server that can be use to
 
 ### Option 3: Add locations to your existing Nginx config
    If you already have servers running nginx, you can copy and paste the locations from the [nginx.conf](https://github.com/mixpanel/tracking-proxy/blob/master/nginx.conf) file in this repo and adjust the locations to match your preference.
+   You can use this option on AWS too instead of using AWS Fargate to install the docker image. Use Nginx Lightsail instance and put the location there. assign static ip address to the instance. then assign a domain from Route 53 and install the certificate using the Bitnami bncert-tool. 
