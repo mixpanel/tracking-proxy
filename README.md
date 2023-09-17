@@ -21,3 +21,13 @@ There are a few ways you can use this repo to deploy a server that can be use to
 
 ### Option 3: Add locations to your existing Nginx config
    If you already have servers running nginx, you can copy and paste the locations from the [nginx.conf](https://github.com/mixpanel/tracking-proxy/blob/master/nginx.conf) file in this repo and adjust the locations to match your preference.
+
+
+### Testing
+
+Once you have a running container, you can test it with:
+```bash
+nginx -t -c
+```
+
+If you wish to load test your proxy, see **[mp-proxy-load-test](https://github.com/ak--47/mp-proxy-load-test/)** 
