@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: nginx-proxy
+    env: docker
+    plan: starter
+    dockerfilePath: './Dockerfile'
+    envVars:
+      - key: PORT
+        value: '80'
