@@ -9,12 +9,12 @@ There are a few ways you can use this repo to deploy a server that can be use to
 
 [![Google Cloud Btn]][Google Cloud Deploy]
 [<img src=https://www.deploytodo.com/do-btn-blue.svg width=198px />][Digital Ocean Deploy]
-<!-- [![Heroku Btn]][Heroku Deploy] -->
-[![Vercel Btn]][Vercel Deploy]
+[![Railway Btn]][Railway Deploy]
 [![Netlify Btn]][Netlify Deploy]
 [![Azure Btn]][Azure Deploy]
-[![Railway Btn]][Railway Deploy]
 [![Render Btn]][Render Deploy]
+
+<!-- [![Heroku Btn]][Heroku Deploy] -->
 
 <!-- URLS -->
 
@@ -28,16 +28,14 @@ There are a few ways you can use this repo to deploy a server that can be use to
 [Heroku Btn]: https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg
 [Heroku Deploy]: https://heroku.com/deploy/?template=https://github.com/ak--47/tracking-proxy/tree/one-clicks
 
-
-[Vercel Btn]: https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg
-[Vercel Deploy]: https://vercel.com/new/clone?repository-url=https://github.com/ak--47/tracking-proxy/tree/one-clicks
+[Railway Btn]: https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg
+[Railway Deploy]: https://railway.app/new/template?template=https://github.com/ak--47/tracking-proxy/tree/one-clicks
 
 
 <!-- [Azure Btn]: https://binbashbanana.github.io/deploy-buttons/buttons/remade/azure.svg
 [Azure Deploy]: https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fquickstarts%2Fmicrosoft.web%2Fwebapp-linux-node%2Fazuredeploy.json
 
-[Railway Btn]: https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg
-[Railway Deploy]: https://railway.app/new/template?template=https://github.com/ak--47/tracking-proxy/tree/one-clicks
+
 
 
 
