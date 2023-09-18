@@ -10,9 +10,9 @@ There are a few ways you can use this repo to deploy a server that can be use to
 [![Google Cloud Btn]][Google Cloud Deploy]
 [<img src=https://www.deploytodo.com/do-btn-blue.svg width=198px />][Digital Ocean Deploy]
 [![Railway Btn]][Railway Deploy]
-[![Netlify Btn]][Netlify Deploy]
-[![Azure Btn]][Azure Deploy]
 [![Render Btn]][Render Deploy]
+[![Azure Btn]][Azure Deploy]
+
 
 <!-- [![Heroku Btn]][Heroku Deploy] -->
 
@@ -24,26 +24,22 @@ There are a few ways you can use this repo to deploy a server that can be use to
 [Digital Ocean Btn]: https://www.deploytodo.com/do-btn-blue.svg
 [Digital Ocean Deploy]: https://cloud.digitalocean.com/apps/new?repo=https://github.com/ak--47/tracking-proxy/tree/one-clicks
 
-<!-- Heroku's deploy buttons have reqs incompatible with others -->
+<!-- Heroku's app.json conflicts with GCP 0_o  -->
 [Heroku Btn]: https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg
 [Heroku Deploy]: https://heroku.com/deploy/?template=https://github.com/ak--47/tracking-proxy/tree/one-clicks
 
 [Railway Btn]: https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg
-[Railway Deploy]: https://railway.app/new/template?template=https://github.com/ak--47/tracking-proxy/tree/one-clicks
+[Railway Deploy]: https://railway.app/template/_RaWSW
+
+[Render Btn]: https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg
+[Render Deploy]: https://render.com/deploy?repo=https://github.com/ak--47/tracking-proxy/tree/one-clicks
 
 
 <!-- [Azure Btn]: https://binbashbanana.github.io/deploy-buttons/buttons/remade/azure.svg
-[Azure Deploy]: https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fquickstarts%2Fmicrosoft.web%2Fwebapp-linux-node%2Fazuredeploy.json
+[Azure Deploy]: https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fquickstarts%2Fmicrosoft.web%2Fwebapp-linux-node%2Fazuredeploy.json -->
 
 
 
-
-
-[Netlify Btn]: https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg
-[Netlify Deploy]: https://app.netlify.com/start/deploy?repository=https://github.com/ak--47/tracking-proxy/tree/one-clicks
-
-[Render Btn]: https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg
-[Render Deploy]: https://render.com/deploy?repo=https://github.com/ak--47/tracking-proxy/tree/one-clicks -->
 
 ### Option 2: Docker Image
    Assuming you have Docker installed on your system, you can do the following:
