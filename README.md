@@ -62,10 +62,10 @@ You should see:
 
 ```json
 {
-	"error": "Welcome. Get started with our API by visiting https://developer.mixpanel.com/"
+  "error": "Welcome. Get started with our API by visiting https://developer.mixpanel.com/"
 }
 ```
-This is same response you would get from visiting https://api.mixpanel.com/, which means your proxy is working as expected..
+This is same response you would get from visiting https://api.mixpanel.com/ (which means your proxy is working as expected).
    
 For production, you would deploy this docker image to whatever servers you run your production services on.
 
@@ -82,4 +82,4 @@ Once you have a running container, you can test it with:
 nginx -t -c
 ```
 
-If you wish to load test your proxy, see **[mp-proxy-load-test](https://github.com/ak--47/mp-proxy-load-test/)**
+If you wish to load test your proxy, see **[mp-proxy-load-test](https://github.com/ak--47/mp-proxy-load-test/)** for a load testing script with artillery.
