@@ -24,20 +24,20 @@ click on a button below to deploy to your favorite cloud provider:
 [Google Cloud Deploy]: https://deploy.cloud.run
 
 [Digital Ocean Btn]: https://www.deploytodo.com/do-btn-blue.svg
-[Digital Ocean Deploy]: https://cloud.digitalocean.com/apps/new?repo=https://github.com/ak--47/tracking-proxy/tree/one-clicks
+[Digital Ocean Deploy]: https://cloud.digitalocean.com/apps/new?repo=https://github.com/mixpanel/tracking-proxy
 
 [Railway Btn]: https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg
 [Railway Deploy]: https://railway.app/template/_RaWSW
 
 [Render Btn]: https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg
-[Render Deploy]: https://render.com/deploy?repo=https://github.com/ak--47/tracking-proxy/tree/one-clicks
+[Render Deploy]: https://render.com/deploy?repo=https://github.com/mixpanel/tracking-proxy
 
 
-<!-- TODOs -->
+<!-- Maybe later? -->
 
 <!-- Heroku's app.json conflicts with GCP 0_o  -->
 [Heroku Btn]: https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg
-[Heroku Deploy]: https://heroku.com/deploy/?template=https://github.com/ak--47/tracking-proxy/tree/one-clicks
+[Heroku Deploy]: https://heroku.com/deploy/?template=https://github.com/mixpanel/tracking-proxy
 
 <!-- Azure is too... complicated -->
 [Azure Btn]: https://binbashbanana.github.io/deploy-buttons/buttons/remade/azure.svg
@@ -66,6 +66,12 @@ You should see:
 }
 ```
 This is same response you would get from visiting https://api.mixpanel.com/ (which means your proxy is working as expected).
+
+You can also verify the nginx config on the command line:
+
+```bash
+nginx -t -c /etc/nginx/nginx.conf
+```
    
 For production, you would deploy this docker image to whatever servers you run your production services on.
 
@@ -75,11 +81,6 @@ For production, you would deploy this docker image to whatever servers you run y
 ### EU Residency
 This proxy server resolves requests to `api.mixpanel.com`, which points to Mixpanel's primary data centers in the United States. If you are using Mixpanel's **[EU Data Residency](https://docs.mixpanel.com/docs/other-bits/privacy-and-security/eu-residency)**, you will need to change the [nginx.config](https://github.com/mixpanel/tracking-proxy/blob/master/nginx.conf#L34) from `api.mixpanel.com` to `api-eu.mixpanel.com`
 
-### Testing
-
-Once you have a running container, you can test it with:
-```bash
-nginx -t -c
-```
+### Load Testing
 
 If you wish to load test your proxy, see **[mp-proxy-load-test](https://github.com/ak--47/mp-proxy-load-test/)** for a load testing script with artillery.
