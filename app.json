@@ -1,19 +1,10 @@
 {
-    "name": "proxy",
-    "options": {
-        "allow-unauthenticated": true,
-        "port": 80
-    },
-	"description": "a mixpanel proxy",
-    "repository": "https://github.com/ak--47/tracking-proxy/tree/one-clicks",
-    "env": {
-        "PORT": {
-            "description": "Port to bind on",
-            "value": "80"
-        }
-    },
-    "stack": "container",
-    "buildpacks": [
-        {"url": "heroku-community/docker"}
-    ]
+	"name": "mixpanel-tracking-proxy",
+	"options": {
+		"allow-unauthenticated": true,
+		"memory": "512Mi",
+		"cpu": "1",
+		"port": 80,
+		"concurrency": 80
+	}
 }
