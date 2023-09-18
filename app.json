@@ -3,5 +3,17 @@
     "options": {
         "allow-unauthenticated": true,
         "port": 80
-    }
+    },
+	"description": "a mixpanel proxy",
+    "repository": "https://github.com/ak--47/tracking-proxy/tree/one-clicks",
+    "env": {
+        "PORT": {
+            "description": "Port to bind on",
+            "value": "80"
+        }
+    },
+    "stack": "container",
+    "buildpacks": [
+        {"url": "heroku-community/docker"}
+    ]
 }

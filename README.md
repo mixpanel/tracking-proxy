@@ -22,7 +22,7 @@ There are a few ways you can use this repo to deploy a server that can be use to
 [Google Cloud Deploy]: https://deploy.cloud.run
 
 [Digital Ocean Btn]: https://www.deploytodo.com/do-btn-blue.svg
-[Digital Ocean Deploy]: https://cloud.digitalocean.com/apps/new?repo=https://github.com/mixpanel/tracking-proxy/tree/master
+[Digital Ocean Deploy]: https://cloud.digitalocean.com/apps/new?repo=https://github.com/ak--47/tracking-proxy/tree/one-clicks
 
 [Heroku Btn]: https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg
 [Heroku Deploy]: https://heroku.com/deploy/?template=https://github.com/ak--47/tracking-proxy/tree/one-clicks
@@ -32,16 +32,16 @@ There are a few ways you can use this repo to deploy a server that can be use to
 [Azure Deploy]: https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fquickstarts%2Fmicrosoft.web%2Fwebapp-linux-node%2Fazuredeploy.json
 
 [Railway Btn]: https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg
-[Railway Deploy]: https://railway.app/new/template?template=https://github.com/mixpanel/tracking-proxy
+[Railway Deploy]: https://railway.app/new/template?template=https://github.com/ak--47/tracking-proxy/tree/one-clicks
 
 [Vercel Btn]: https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg
-[Vercel Deploy]: https://vercel.com/new/clone?repository-url=https://github.com/mixpanel/tracking-proxy
+[Vercel Deploy]: https://vercel.com/new/clone?repository-url=https://github.com/ak--47/tracking-proxy/tree/one-clicks
 
 [Netlify Btn]: https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg
-[Netlify Deploy]: https://app.netlify.com/start/deploy?repository=https://github.com/mixpanel/tracking-proxy
+[Netlify Deploy]: https://app.netlify.com/start/deploy?repository=https://github.com/ak--47/tracking-proxy/tree/one-clicks
 
 [Render Btn]: https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg
-[Render Deploy]: https://render.com/deploy?repo=https://github.com/mixpanel/tracking-proxy -->
+[Render Deploy]: https://render.com/deploy?repo=https://github.com/ak--47/tracking-proxy/tree/one-clicks -->
 
 ### Option 2: Docker Image
    Assuming you have Docker installed on your system, you can do the following:
