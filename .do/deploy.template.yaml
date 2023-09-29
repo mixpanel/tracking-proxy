@@ -1,7 +1,7 @@
 spec:
- name: mixpanel-api-proxy
+ name: tracking-proxy
  services:
- - name: mixpanel-api-proxy
+ - name: tracking-proxy
    git:
      branch: master
      repo_clone_url: https://github.com/mixpanel/tracking-proxy.git
