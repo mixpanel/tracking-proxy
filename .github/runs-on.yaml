@@ -1,0 +1,2 @@
+# secret repository containing shared configuration
+_extends: .github-private

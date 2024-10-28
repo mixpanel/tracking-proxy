@@ -1,0 +1,33 @@
+name: Build mixpanel-proxy Image
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on:
+      - runs-on
+      - runner=cheap
+      - run-id=${{ github.run_id }}
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Check Out
+        uses: actions/checkout@v4
+
+      - name: Set Up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to ECR
+        uses: wikando/github-actions-docker/ecr-login@v1
+
+      - name: Build Docker Image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: docker.fundraisingbox.io/mixpanel-proxy:latest
+
