@@ -86,6 +86,9 @@ When you're seeing events ingested into Mixpanel, but no geo-location data inclu
 ### EU Residency
 This proxy server resolves requests to `api.mixpanel.com`, which points to Mixpanel's primary data centers in the United States. If you are using Mixpanel's **[EU Data Residency](https://docs.mixpanel.com/docs/other-bits/privacy-and-security/eu-residency)**, you will need to change the [nginx.config](https://github.com/mixpanel/tracking-proxy/blob/master/nginx.conf#L34) from `api.mixpanel.com` to `api-eu.mixpanel.com`
 
+### IN Residency
+This proxy server resolves requests to `api.mixpanel.com`, which points to Mixpanel's primary data centers in the United States. If you are using Mixpanel's **[IN Data Residency](https://docs.mixpanel.com/docs/privacy/in-residency)**, you will need to change the [nginx.config](https://github.com/mixpanel/tracking-proxy/blob/master/nginx.conf#L34) from `api.mixpanel.com` to `api-in.mixpanel.com`
+
 ### Load Testing
 
 If you wish to load test your proxy, see **[mp-proxy-load-test](https://github.com/ak--47/mp-proxy-load-test/)** for a load testing script with artillery.
