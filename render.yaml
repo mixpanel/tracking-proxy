@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: nginx-proxy
+    name: tracking-proxy
     env: docker
     plan: starter
     dockerfilePath: './Dockerfile'
